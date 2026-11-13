@@ -1,0 +1,17 @@
+Subject: [PATCH] pinouts: add the C5_ILI9341 board selector
+
+Needed by boards/C5-ILI9341 (Waveshare ESP32-C5-WIFI6-KIT + 2.8in ILI9341 touch).
+Bruce picks each board pin file here from a define set in the board .ini.
+---
+diff --git a/boards/pinouts/pins_arduino.h b/boards/pinouts/pins_arduino.h
+--- a/boards/pinouts/pins_arduino.h
++++ b/boards/pinouts/pins_arduino.h
+@@ -48,6 +48,8 @@
+ #include "../lilygo-t-hmi/pins_arduino.h"
+ #elif ELECROW
+ #include "../elecrow/pins_arduino.h"
++#elif C5_ILI9341
++#include "../C5-ILI9341/pins_arduino.h"
+ #elif ESP32C5_DEVKITC_1_TFT
+ #include "../ESP32-C5-tft/pins_arduino.h"
+ #elif ESP32C5_DEVKITC_1

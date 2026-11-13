@@ -1,0 +1,5 @@
+# Firmware images are published as GitHub Release assets, not committed
+*.bin
+
+.DS_Store
+Thumbs.db

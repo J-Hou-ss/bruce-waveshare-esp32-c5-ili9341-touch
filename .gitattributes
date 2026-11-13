@@ -1,0 +1,2 @@
+# Keep patches with LF endings on every platform so git apply works
+*.patch text eol=lf
